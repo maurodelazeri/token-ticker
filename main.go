@@ -14,7 +14,7 @@ import (
 	"github.com/gosuri/uilive"
 	"github.com/mattn/go-colorable"
 	"github.com/olekukonko/tablewriter"
-	. "github.com/polyrabbit/token-ticker/exchange"
+	. "github.com/maurodelazeri/token-ticker/exchange"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
@@ -56,7 +56,7 @@ func requestSymbolPrice(client ExchangeClient, symbols []string) []chan *SymbolP
 }
 
 func checkForUpdate(httpClient *http.Client) {
-	releaseUrl := "https://api.github.com/repos/polyrabbit/token-ticker/releases/latest"
+	releaseUrl := "https://api.github.com/repos/maurodelazeri/token-ticker/releases/latest"
 	resp, err := httpClient.Get(releaseUrl)
 	if err != nil {
 		logrus.Debugf("Failed to fetch Github release page, error %s", err)
@@ -160,7 +160,7 @@ func showUsageAndExit() {
 	fmt.Fprintln(os.Stderr, "\nExchange.Token Pairs:")
 	fmt.Fprintln(os.Stderr, "  Specify which exchange and token pair to query, different exchanges use different forms to express tokens/trading pairs, refer to their URLs to find the format"+
 		" (eg. to get BitCoin price from Bitfinex and CoinMarketCap you should use query string \"Bitfinex.BTCUSDT CoinMarketCap.Bitcoin\").")
-	fmt.Fprintln(os.Stderr, "\nFind help/updates from here - https://github.com/polyrabbit/token-ticker")
+	fmt.Fprintln(os.Stderr, "\nFind help/updates from here - https://github.com/maurodelazeri/token-ticker")
 	os.Exit(0)
 }
 

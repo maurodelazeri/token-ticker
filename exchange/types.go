@@ -56,7 +56,7 @@ func (client *exchangeBaseClient) httpGet(endpoint string, queryMap map[string]s
 	if err != nil {
 		return nil, err
 	}
-	req.Header.Set("User-Agent", "Mozilla/5.0 (compatible; token-ticker; +https://github.com/polyrabbit/token-ticker)")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (compatible; token-ticker; +https://github.com/maurodelazeri/token-ticker)")
 	req.Header.Set("Cache-Control", "no-cache")
 	req.Header.Add("Cache-Control", "no-store")
 	req.Header.Add("Cache-Control", "must-revalidate")

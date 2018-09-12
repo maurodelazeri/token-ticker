@@ -1,10 +1,10 @@
 # Token Ticker
 
-[![Build Status](https://travis-ci.org/polyrabbit/token-ticker.svg?branch=master)](https://travis-ci.org/polyrabbit/token-ticker)
-[![codecov](https://codecov.io/gh/polyrabbit/token-ticker/branch/master/graph/badge.svg)](https://codecov.io/gh/polyrabbit/token-ticker)
+[![Build Status](https://travis-ci.org/maurodelazeri/token-ticker.svg?branch=master)](https://travis-ci.org/maurodelazeri/token-ticker)
+[![codecov](https://codecov.io/gh/maurodelazeri/token-ticker/branch/master/graph/badge.svg)](https://codecov.io/gh/maurodelazeri/token-ticker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/polyrabbit/token-ticker/pulls)
-[![Go Report Card](https://goreportcard.com/badge/github.com/polyrabbit/token-ticker)](https://goreportcard.com/report/github.com/polyrabbit/token-ticker)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/maurodelazeri/token-ticker/pulls)
+[![Go Report Card](https://goreportcard.com/badge/github.com/maurodelazeri/token-ticker)](https://goreportcard.com/report/github.com/maurodelazeri/token-ticker)
 
 > NEVER LEAVE YOUR TERMINAL
 
@@ -44,16 +44,16 @@ Token-ticker (or `tt` for short) is a CLI tool for those who are both **Crypto i
 
 #### `curl | bash` style downloads to `/usr/local/bin`
 ```bash
-$ curl -sfL https://raw.githubusercontent.com/polyrabbit/token-ticker/master/install.sh | bash -s -- -d -b /usr/local/bin
+$ curl -sfL https://raw.githubusercontent.com/maurodelazeri/token-ticker/master/install.sh | bash -s -- -d -b /usr/local/bin
 ```
 
 #### Using [Go](https://golang.org/) (1.9+)
 ```bash
-$ go get -u github.com/polyrabbit/token-ticker
+$ go get -u github.com/maurodelazeri/token-ticker
 ```
 
 #### Manually
-Download from [release page](https://github.com/polyrabbit/token-ticker/releases/latest) and extact the tarbal into /usr/bin or your `PATH` directory.
+Download from [release page](https://github.com/maurodelazeri/token-ticker/releases/latest) and extact the tarbal into /usr/bin or your `PATH` directory.
 
 ### Usage
 
@@ -79,7 +79,7 @@ Options:
 Exchange.Token Pairs:
   Specify which exchange and token pair to query, different exchanges use different forms to express tokens/trading pairs, refer to their URLs to find the format, eg. to get BitCoin price from Bitfinex and CoinMarketCap you should use query string "Bitfinex.BTCUSDT CoinMarketCap.Bitcoin"
 
-Find help/updates from here - https://github.com/polyrabbit/token-ticker
+Find help/updates from here - https://github.com/maurodelazeri/token-ticker
 ```
 
 * #### Display latest market prices for for `BNBUSDT`, `BTCUSDT` from `Binance` and `HTUSDT` from `Huobi`
@@ -123,4 +123,4 @@ $ tt       # <--- This is also the way I used most freqently
 
 ### License
 
-The MIT License (MIT) - see [LICENSE.md](https://github.com/polyrabbit/token-ticker/blob/master/LICENSE) for more details
+The MIT License (MIT) - see [LICENSE.md](https://github.com/maurodelazeri/token-ticker/blob/master/LICENSE) for more details

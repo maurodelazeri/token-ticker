@@ -11,7 +11,7 @@ script:
 
 after_success:
   # Ensure download script works
-  - curl -sfL https://raw.githubusercontent.com/polyrabbit/token-ticker/master/install.sh | bash -s -- -d
+  - curl -sfL https://raw.githubusercontent.com/maurodelazeri/token-ticker/master/install.sh | bash -s -- -d
   - bash <(curl -s https://codecov.io/bash)
 
 before_deploy:
@@ -29,7 +29,7 @@ before_deploy:
         tar zcvf "dist/$base.tar.gz" -C "$f" .;
       fi
     done
-#  - ghr --username polyrabbit --token $GITHUB_TOKEN --replace -delete --prerelease --debug pre-release dist/
+#  - ghr --username maurodelazeri --token $GITHUB_TOKEN --replace -delete --prerelease --debug pre-release dist/
 
 deploy:
   provider: releases

@@ -1,4 +1,4 @@
-package: github.com/polyrabbit/token-ticker
+package: github.com/maurodelazeri/token-ticker
 import:
 - package: github.com/olekukonko/tablewriter
 - package: github.com/spf13/viper
